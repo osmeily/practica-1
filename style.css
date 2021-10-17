@@ -22,6 +22,11 @@ body{
     text-shadow: 2px 2px 3px rgb(157, 55, 182);
 
 }
+
+p{
+    margin: 20px;
+}
+
 .first-paragraph::first-letter{
     font-size: 30px;
     font-style:italic;
@@ -34,21 +39,54 @@ aside{
     text-align: center;
     padding: 15px;
     margin: 20px 40px;
+    border-radius: 10px;
 }
 
-.container-img h2{
+.container {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    background-color: rgb(255, 255, 255, 0.40);
+    margin: auto auto 100px auto;
+    max-width: 1200px;
+    box-shadow: 3px 3px 10px rgb(214, 214, 214);
+    border-radius: 20px;
+}
+
+.container h2{
     text-align: center;
-    font-size: 30px;
-}
-.container-img{
-    background-color: rgb(255, 255, 255);
-}
-.gallery {
-    width: 95%;
+    font-size: 40px;
+    -webkit-text-stroke: 0.40px rgb(0, 0, 0) ;
+    color: rgb(131, 221, 224);
+    text-shadow: 1px 1px 5px gray;
 }
 
-.gallery img {
-    
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: auto auto 30px auto;
+    gap: 30px;
+
+}
+
+.image {
+    border-radius: 20px;
+    display: grid; 
+    grid-template-rows: 1fr 50px;
+    background-color: mintcream
+}
+
+.image:hover {
+    box-shadow: 1px 1px 10px rgb(135, 255, 255);
+    transition: all 0.3s ease;
+}
+.image img {
+    border-radius: 20px;
+    width: 350px;
+    height: 300px;
+}
+
+.foot {
+    margin-left: 10px;
 }
 
 footer{
