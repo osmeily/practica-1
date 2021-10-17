@@ -36,9 +36,12 @@ aside{
     margin: 20px 40px;
 }
 
-h2{
+.container-img h2{
     text-align: center;
     font-size: 30px;
+}
+.container-img{
+    background-color: rgb(255, 255, 255);
 }
 .gallery {
     width: 95%;
